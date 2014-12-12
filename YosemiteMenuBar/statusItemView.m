@@ -17,9 +17,17 @@
 
 #define StatusItemViewPaddingWidth  6
 #define StatusItemViewPaddingHeight 3
+#define FontSize 14.0
 
 - (void)drawRect:(NSRect)rect {
-    NSDictionary *attr = [NSDictionary dictionaryWithObjectsAndKeys: [NSFont messageFontOfSize:14], NSFontAttributeName, nil];
+    NSFont *font = [[NSFontManager sharedFontManager] fontWithFamily: @"Helvetica"
+                                                              traits: 0.0
+                                                              weight: 1.0
+                                                                size: FontSize];
+    NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    style.alignment = kCTTextAlignmentCenter;
+    NSDictionary *attr = @{ NSFontAttributeName: font,
+                            NSParagraphStyleAttributeName: style };
 
     [statusItem drawStatusBarBackgroundInRect:[self bounds]
                                 withHighlight:isHighlighted];
@@ -30,9 +38,10 @@
     unsigned long long size = [[fileAttributes objectForKey:NSFileSystemFreeSize] longLongValue];
 //    NSLog(@"Attr: %llu", size);
 //    NSLog(@"free disk space: %dGB", (int)(size / 1073741824));
-    
-    [[NSString stringWithFormat:@"%dGB", (int)(size / 1073741824)] drawAtPoint:NSMakePoint(5, 2) withAttributes:attr];
-
+    CGFloat barHeight = [[[NSApplication sharedApplication] mainMenu] menuBarHeight];
+    CGFloat yOffset = (barHeight - FontSize) / 2.0;
+    CGRect cgrect = CGRectMake(0, -yOffset, self.frame.size.width, self.frame.size.height);
+    [[NSString stringWithFormat:@"%dGB", (int)(size / 1073741824)] drawInRect:cgrect withAttributes:attr];
 }
 
 - (void)mouseDown:(NSEvent *)event {

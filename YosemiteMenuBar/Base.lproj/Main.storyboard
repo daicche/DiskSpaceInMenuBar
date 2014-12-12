@@ -649,14 +649,10 @@
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <menu id="wQx-YC-Yav">
                     <items>
-                        <menuItem title="Item 1" id="geh-hL-A3T">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem title="Item 2" id="7cr-kI-0QU">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem title="Item 3" id="mHw-YG-Xq1">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="geh-hL-A3T" userLabel="Quit">
+                            <connections>
+                                <action selector="terminate:" target="hnw-xV-0zn" id="1uj-BC-i3q"/>
+                            </connections>
                         </menuItem>
                     </items>
                 </menu>

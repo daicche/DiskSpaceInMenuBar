@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F211E3B19875694005465EE /* YosemiteMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YosemiteMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F211E3B19875694005465EE /* DiskSpaceInMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiskSpaceInMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F211E3F19875694005465EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F211E4019875694005465EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F211E4219875694005465EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		4F211E4619875694005465EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4F211E4819875694005465EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4F211E4B19875694005465EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4F211E5119875694005465EE /* YosemiteMenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YosemiteMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F211E5119875694005465EE /* DiskSpaceInMenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiskSpaceInMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F211E61198756C2005465EE /* YosemiteStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YosemiteStatusItem.h; sourceTree = "<group>"; };
 		4F211E62198757AF005465EE /* YosemiteStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YosemiteStatusItem.m; sourceTree = "<group>"; };
 		4F211E6419875EB4005465EE /* statusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusItemView.h; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		4F211E3219875694005465EE = {
 			isa = PBXGroup;
 			children = (
-				4F211E3D19875694005465EE /* YosemiteMenuBar */,
+				4F211E3D19875694005465EE /* DiskSpaceInMenuBar */,
 				4F211E3C19875694005465EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		4F211E3C19875694005465EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F211E3B19875694005465EE /* YosemiteMenuBar.app */,
-				4F211E5119875694005465EE /* YosemiteMenuBarTests.xctest */,
+				4F211E3B19875694005465EE /* DiskSpaceInMenuBar.app */,
+				4F211E5119875694005465EE /* DiskSpaceInMenuBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F211E3D19875694005465EE /* YosemiteMenuBar */ = {
+		4F211E3D19875694005465EE /* DiskSpaceInMenuBar */ = {
 			isa = PBXGroup;
 			children = (
 				4F211E4219875694005465EE /* ViewController.h */,
@@ -93,6 +93,7 @@
 				4F211E4A19875694005465EE /* Main.storyboard */,
 				4F211E3E19875694005465EE /* Supporting Files */,
 			);
+			name = DiskSpaceInMenuBar;
 			path = YosemiteMenuBar;
 			sourceTree = "<group>";
 		};
@@ -108,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F211E3A19875694005465EE /* YosemiteMenuBar */ = {
+		4F211E3A19875694005465EE /* DiskSpaceInMenuBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F211E5B19875694005465EE /* Build configuration list for PBXNativeTarget "YosemiteMenuBar" */;
+			buildConfigurationList = 4F211E5B19875694005465EE /* Build configuration list for PBXNativeTarget "DiskSpaceInMenuBar" */;
 			buildPhases = (
 				4F211E3719875694005465EE /* Sources */,
 				4F211E3819875694005465EE /* Frameworks */,
@@ -120,14 +121,14 @@
 			);
 			dependencies = (
 			);
-			name = YosemiteMenuBar;
+			name = DiskSpaceInMenuBar;
 			productName = YosemiteMenuBar;
-			productReference = 4F211E3B19875694005465EE /* YosemiteMenuBar.app */;
+			productReference = 4F211E3B19875694005465EE /* DiskSpaceInMenuBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4F211E5019875694005465EE /* YosemiteMenuBarTests */ = {
+		4F211E5019875694005465EE /* DiskSpaceInMenuBarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F211E5E19875694005465EE /* Build configuration list for PBXNativeTarget "YosemiteMenuBarTests" */;
+			buildConfigurationList = 4F211E5E19875694005465EE /* Build configuration list for PBXNativeTarget "DiskSpaceInMenuBarTests" */;
 			buildPhases = (
 				4F211E4D19875694005465EE /* Sources */,
 				4F211E4E19875694005465EE /* Frameworks */,
@@ -138,9 +139,9 @@
 			dependencies = (
 				4F211E5319875694005465EE /* PBXTargetDependency */,
 			);
-			name = YosemiteMenuBarTests;
+			name = DiskSpaceInMenuBarTests;
 			productName = YosemiteMenuBarTests;
-			productReference = 4F211E5119875694005465EE /* YosemiteMenuBarTests.xctest */;
+			productReference = 4F211E5119875694005465EE /* DiskSpaceInMenuBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F211E3619875694005465EE /* Build configuration list for PBXProject "YosemiteMenuBar" */;
+			buildConfigurationList = 4F211E3619875694005465EE /* Build configuration list for PBXProject "DiskSpaceInMenuBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -174,8 +175,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F211E3A19875694005465EE /* YosemiteMenuBar */,
-				4F211E5019875694005465EE /* YosemiteMenuBarTests */,
+				4F211E3A19875694005465EE /* DiskSpaceInMenuBar */,
+				4F211E5019875694005465EE /* DiskSpaceInMenuBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,7 +225,7 @@
 /* Begin PBXTargetDependency section */
 		4F211E5319875694005465EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F211E3A19875694005465EE /* YosemiteMenuBar */;
+			target = 4F211E3A19875694005465EE /* DiskSpaceInMenuBar */;
 			targetProxy = 4F211E5219875694005465EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -324,7 +325,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YosemiteMenuBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiskSpaceInMenuBar;
 			};
 			name = Debug;
 		};
@@ -335,7 +336,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YosemiteMenuBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiskSpaceInMenuBar;
 			};
 			name = Release;
 		};
@@ -354,7 +355,7 @@
 				);
 				INFOPLIST_FILE = YosemiteMenuBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiskSpaceInMenuBarTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -370,7 +371,7 @@
 				);
 				INFOPLIST_FILE = YosemiteMenuBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiskSpaceInMenuBarTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -378,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F211E3619875694005465EE /* Build configuration list for PBXProject "YosemiteMenuBar" */ = {
+		4F211E3619875694005465EE /* Build configuration list for PBXProject "DiskSpaceInMenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F211E5919875694005465EE /* Debug */,
@@ -387,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F211E5B19875694005465EE /* Build configuration list for PBXNativeTarget "YosemiteMenuBar" */ = {
+		4F211E5B19875694005465EE /* Build configuration list for PBXNativeTarget "DiskSpaceInMenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F211E5C19875694005465EE /* Debug */,
@@ -396,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F211E5E19875694005465EE /* Build configuration list for PBXNativeTarget "YosemiteMenuBarTests" */ = {
+		4F211E5E19875694005465EE /* Build configuration list for PBXNativeTarget "DiskSpaceInMenuBarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F211E5F19875694005465EE /* Debug */,

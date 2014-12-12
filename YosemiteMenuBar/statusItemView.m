@@ -41,7 +41,7 @@
     CGFloat barHeight = [[[NSApplication sharedApplication] mainMenu] menuBarHeight];
     CGFloat yOffset = (barHeight - FontSize) / 2.0;
     CGRect cgrect = CGRectMake(0, -yOffset, self.frame.size.width, self.frame.size.height);
-    [[NSString stringWithFormat:@"%dGB", (int)(size / 1073741824)] drawInRect:cgrect withAttributes:attr];
+    [[NSString stringWithFormat:@"%dGB", (int)(size / 1000000000)] drawInRect:cgrect withAttributes:attr];
 }
 
 - (void)mouseDown:(NSEvent *)event {

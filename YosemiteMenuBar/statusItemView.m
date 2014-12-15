@@ -32,16 +32,19 @@
     [statusItem drawStatusBarBackgroundInRect:[self bounds]
                                 withHighlight:isHighlighted];
 
+    CGFloat barHeight = [[[NSApplication sharedApplication] mainMenu] menuBarHeight];
+    CGFloat yOffset = ( (barHeight - FontSize) / 2.0 ) - 4;
+    CGRect cgrect = CGRectMake(0, -yOffset, self.frame.size.width, self.frame.size.height);
+    [[NSString stringWithFormat:@"%dGB", [self getDiskSpaceInGigabyte]] drawInRect:cgrect withAttributes:attr];
+}
+
+- (int)getDiskSpaceInGigabyte {
     NSError *error = nil;
     NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:@"/" error:&error];
     
     unsigned long long size = [[fileAttributes objectForKey:NSFileSystemFreeSize] longLongValue];
-//    NSLog(@"Attr: %llu", size);
-//    NSLog(@"free disk space: %dGB", (int)(size / 1073741824));
-    CGFloat barHeight = [[[NSApplication sharedApplication] mainMenu] menuBarHeight];
-    CGFloat yOffset = ( (barHeight - FontSize) / 2.0 ) - 4;
-    CGRect cgrect = CGRectMake(0, -yOffset, self.frame.size.width, self.frame.size.height);
-    [[NSString stringWithFormat:@"%dGB", (int)(size / 1000000000)] drawInRect:cgrect withAttributes:attr];
+
+    return (int)(size / 1000000000);
 }
 
 - (void)mouseDown:(NSEvent *)event {
